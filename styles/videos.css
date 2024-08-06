@@ -9,25 +9,6 @@
 /* Main menu container */
 .menu {
     position: relative;
-    margin-left: 20px;
-    height: 120px;
-    font-size: 24px;
-    color: #000;
-    font-family: Kreon, serif; 
-    background-color: #f6f6f6;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 10px; 
-    box-sizing: border-box; 
-    z-index: 10;
-}
-
-/* Menu items */
-/* Main menu container */
-.menu {
-    position: relative;
-    margin-left: 20px;
     height: 120px;
     font-size: 24px;
     color: #000;
@@ -173,7 +154,7 @@
 
 .videos-page1 {
     position: relative;
-    margin: 40px 20px 0px; 
+    margin: 40px 10px 0px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -273,7 +254,7 @@ video {
 .youtube-section {
     width: 100%;
     height: auto;
-    margin: 20px 0 0;
+    margin: 20px -10px 0;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -285,15 +266,16 @@ video {
 
 .youtube-container {
     flex-wrap: wrap; 
-    margin: 20px 20px 0px;
+   margin-top: 20px;
+   margin-left:20px;
     display: flex;
     justify-content: space-between; 
-    gap: 20px; 
 }
 
 .youtube-wrapper {
+    gap:20px;
     flex: 1 1 calc(50% - 40px); 
-    max-width: calc(50% - 30px); 
+    max-width: calc(50% - 20px); 
 }
 
 iframe {

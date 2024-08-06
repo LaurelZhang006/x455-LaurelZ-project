@@ -10,7 +10,6 @@
 /* Main menu container */
 .menu {
     position: relative;
-    margin-left: 20px;
     height: 120px;
     font-size: 24px;
     color: #000;
@@ -155,8 +154,8 @@
 /* GIF icon */
 .gif-icon {
     position: relative;
-    margin: 5px 20px 40px;
-    width: calc(100% - 20px);
+    margin: 5px 0px 40px;
+    width: 100%;
     height: auto; 
     object-fit: cover;
 }
@@ -164,7 +163,7 @@
 /* Simple Introduction section */
 .simple-introduction {
     background-color: #f6f6f6;
-    margin: 10px 0px 30px 20px;
+    margin: 10px 0px 30px 0px;
     padding: 10px;
     text-align: center;
     font-size: 1.8em; 
@@ -186,7 +185,6 @@
 /* Designs section */
 .designs {
     position: relative;
-    margin: 0px 0px 20px 20px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -195,6 +193,7 @@
 }
 
 .designs1 {
+    margin-left: 15px;
     letter-spacing: -0.01em;
     font-family: Kreon, serif;
     font-size: 4em; 
@@ -203,6 +202,7 @@
 }
 
 .design1-text {
+    margin-left: 15px;
     font-size: 1.5em; 
     line-height: 1.5;
     color: #828282;
@@ -294,7 +294,6 @@
 /* Videos section */
 .videos {
     position: relative;
-    margin: 0 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -302,6 +301,7 @@
 }
 
 .videos1 {
+    margin-left: 15px;
     letter-spacing: -0.01em;
     font-family: Kreon, serif;
     font-size: 4em;
@@ -310,6 +310,7 @@
 }
 
 .videos1-text {
+    margin-left: 15px;
     font-size: 1.5em;
     line-height: 1.5;
     color: #828282;
@@ -359,7 +360,6 @@
 /* Production section */
 .production {
     position: relative;
-    margin: 0 20px 40px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -369,6 +369,7 @@
 }
 
 .production1 {
+    margin-left: 15px;
     letter-spacing: -0.01em;
     font-family: Kreon, serif; 
     font-size: 4em; 
@@ -377,6 +378,7 @@
 }
 
 .production-text {
+    margin-left: 15px;
     font-size: 1.5em; 
     line-height: 1.5;
     color: #828282;
@@ -384,6 +386,7 @@
 }
 
 .paragraph {
+    margin-left: 15px;
     font-size: 1.25em; 
     line-height: 1.5;
     font-weight: 500;

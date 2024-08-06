@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact-Laurel Zhang (Chengchen Zhang)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kreon:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- !PAGE CONTENT! -->
+    <div class="contact-page">
+      <!-- menu section -->
+      <div class="menu">
+        <a href="/index.html">
+          <img class="logo-icon" alt="logo" src="/image/personal-logo.png" />
+        </a>
+        <!-- Toggle button for mobile -->
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <!-- Menu items -->
+        <div class="menu-items">
+          <a href="/index.html" class="home1">Home</a>
+          <a href="about.html" class="about">About</a>
+          <a href="designs.html" class="designs2">Designs</a>
+          <a href="videos.html" class="videos3">Videos</a>
+          <a href="production.html" class="production2">Production</a>
+          <a href="contact.html" class="contact">Contact</a>
+        </div>
+        <!-- Icons section -->
+        <div class="icon">
+          <img
+            class="shopping-cart-icon"
+            alt="cart"
+            src="/image/shopping-cart-icon.png"
+          />
+          <img class="search-icon" alt="search" src="/image/search-icon.png" />
+        </div>
+      </div>
+
+      <!--Contact section -->
+      <div class="contact-page1">
+        <div class="contact-page1-title">Contact</div>
+        <div class="contact-page1-text">
+          Get in Touch for Collaborations and Inquiries
+        </div>
+      </div>
+
+      <!--Details-->
+      <div class="contact-items">
+        <div class="email-details">
+          <p>
+            Write an e-mail via the form,<br />
+            or just e-mail directly at <br />
+            laurelzhang006@gmail.com
+          </p>
+        </div>
+
+        <div class="input">
+          <div class="first-name">First name</div>
+          <div class="field"></div>
+        </div>
+        <div class="input1">
+          <div class="first-name">Last name</div>
+          <div class="field"></div>
+        </div>
+        <div class="input2">
+          <div class="first-name">Email address</div>
+          <div class="field"></div>
+        </div>
+        <div class="input3">
+          <div class="first-name">Message</div>
+          <div class="field"></div>
+        </div>
+        <div class="button">
+          <div class="send-message">Send Message</div>
+        </div>
+        <div class="info">_ I’ve read and accept the terms & conditions*</div>
+      </div>
+
+      <!-- bottom section -->
+      <div class="bottom">
+        <div class="laurel-zhang">Laurel Zhang</div>
+        <div class="personal-details">
+          My personal portfolio website showcases some of my previous work.
+          Thank you for visiting, and I look forward to sharing more creative
+          and design stories with you!
+        </div>
+        <img class="x-ins" alt="" src="/image/x-ins.png" />
+        <div class="bottom-email">
+          laurelzhang006@gmail.com<br />
+          @ Copyright 2024 | Laurel Zhang
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menuToggle = document.querySelector(".menu-toggle");
+      var menuItems = document.querySelector(".menu-items");
+      var icon = document.querySelector(".icon");
+
+      if (menuToggle && menuItems) {
+        menuToggle.addEventListener("click", function () {
+          this.classList.toggle("active");
+          menuItems.classList.toggle("active");
+          icon.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>

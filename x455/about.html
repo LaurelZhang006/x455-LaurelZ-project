@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About-Laurel Zhang (Chengchen Zhang)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kreon:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- !PAGE CONTENT! -->
+    <div class="about-page">
+      <!-- menu section -->
+      <div class="menu">
+        <a href="/index.html">
+          <img class="logo-icon" alt="logo" src="/image/personal-logo.png" />
+        </a>
+        <!-- Toggle button for mobile -->
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <!-- Menu items -->
+        <div class="menu-items">
+          <a href="/index.html" class="home1">Home</a>
+          <a href="about.html" class="about">About</a>
+          <a href="designs.html" class="designs2">Designs</a>
+          <a href="videos.html" class="videos3">Videos</a>
+          <a href="production.html" class="production2">Production</a>
+          <a href="contact.html" class="contact">Contact</a>
+        </div>
+        <!-- Icons section -->
+        <div class="icon">
+          <img
+            class="shopping-cart-icon"
+            alt="cart"
+            src="/image/shopping-cart-icon.png"
+          />
+          <img class="search-icon" alt="search" src="/image/search-icon.png" />
+        </div>
+      </div>
+
+      <!-- About section -->
+      <div class="about-page1">
+        <div class="about-page1-title">About</div>
+        <div class="about-page1-text">
+          Visual Storytelling and Project Highlights
+        </div>
+
+        <div class="about-content">
+          <div class="about-page1-paragraph">
+            I'm Laurel Zhang, a mechanical design graduate who found my calling
+            in graphic design. Since establishing my studio in 2017, I've
+            dedicated myself to translating creative ideas into impactful
+            products for local institutions. My approach blends practicality
+            with cultural sustainability, ensuring each design project resonates
+            beyond its surface. My portfolio includes innovative projects like
+            the multi-functional ticket design for Yu Yuan Garden and the
+            culturally inspired packaging for Qinhuai District Library. By
+            integrating my engineering background with graphic design
+            principles, I ensure that every product not only meets creative
+            objectives but also excels in material feasibility, environmental
+            responsibility, and cost-effectiveness.
+          </div>
+
+          <div class="left-section">
+            <img class="image-az" alt="az" src="/image/a2.jpg" />
+            <div class="square"></div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="right-section">
+            <img class="image-asu" alt="asu" src="/image/asu.png" />
+            <div class="square"></div>
+          </div>
+
+          <div class="about-page1-paragraph2">
+            In addition to my creative endeavors, I am currently pursuing a
+            master's degree in Graphic Design and User Experience Design. This
+            academic pursuit aims to deepen my understanding of user-centric
+            design principles and digital marketing strategies. I am driven to
+            empower underrepresented sectors with impactful branding and user
+            experience solutions, bridging the gap between creativity and
+            business effectiveness.
+          </div>
+        </div>
+
+        <div class="about-page1-paragraph">
+          For more information :
+          <a href="https://www.wikipedia.org/" target="_blank">Wikipedia Page</a
+          >,
+          <a href="https://www.youtube.com/" target="_blank">YouTube Page</a>
+        </div>
+      </div>
+
+      <!-- bottom section -->
+      <div class="bottom">
+        <div class="laurel-zhang">Laurel Zhang</div>
+        <div class="personal-details">
+          My personal portfolio website showcases some of my previous work.
+          Thank you for visiting, and I look forward to sharing more creative
+          and design stories with you!
+        </div>
+        <img class="x-ins" alt="" src="/image/x-ins.png" />
+        <div class="bottom-email">
+          laurelzhang006@gmail.com<br />
+          @ Copyright 2024 | Laurel Zhang
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menuToggle = document.querySelector(".menu-toggle");
+      var menuItems = document.querySelector(".menu-items");
+      var icon = document.querySelector(".icon");
+
+      if (menuToggle && menuItems) {
+        menuToggle.addEventListener("click", function () {
+          this.classList.toggle("active");
+          menuItems.classList.toggle("active");
+          icon.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>

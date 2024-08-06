@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Production-Laurel Zhang (Chengchen Zhang)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/production.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kreon:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- !PAGE CONTENT! -->
+    <div class="production-page">
+      <!-- menu section -->
+      <div class="menu">
+        <a href="/index.html">
+          <img class="logo-icon" alt="logo" src="/image/personal-logo.png" />
+        </a>
+        <!-- Toggle button for mobile -->
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <!-- Menu items -->
+        <div class="menu-items">
+          <a href="/index.html" class="home1">Home</a>
+          <a href="about.html" class="about">About</a>
+          <a href="designs.html" class="designs2">Designs</a>
+          <a href="videos.html" class="videos3">Videos</a>
+          <a href="production.html" class="production2">Production</a>
+          <a href="contact.html" class="contact">Contact</a>
+        </div>
+        <!-- Icons section -->
+        <div class="icon">
+          <img
+            class="shopping-cart-icon"
+            alt="cart"
+            src="/image/shopping-cart-icon.png"
+          />
+          <img class="search-icon" alt="search" src="/image/search-icon.png" />
+        </div>
+      </div>
+
+      <!--production section -->
+      <div class="production-page1">
+        <div class="production-page1-title">Production</div>
+        <div class="production-page1-text">
+          Comprehensive Production Services and Pricing Details
+        </div>
+      </div>
+
+      <div class="production-page1-paragraph">
+        With extensive experience in mechanical design and production, I
+        specialize in bringing creative ideas to life with precision and
+        efficiency. Since founding my studio in 2017, I have successfully
+        managed numerous projects for local institutions, producing over 200,000
+        units. I collaborate closely with various factories and am well-versed
+        in standard production materials and processes. My designs have
+        consistently transitioned from concept to reality, ensuring high-quality
+        results every time. Explore the pricing form below to learn about the
+        costs associated with different production materials. Let’s work
+        together to transform your vision into expertly crafted products.
+      </div>
+
+      <!--table section -->
+
+      <table id="material-table">
+        <thead>
+          <tr>
+            <th>Materials</th>
+            <th>Details</th>
+            <th data-type="number">Minimum order quantity</th>
+            <th data-type="number">Pricing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paper</td>
+            <td>Coated Paper</td>
+            <td>100+</td>
+            <td>0.1+</td>
+          </tr>
+          <tr>
+            <td>Paper</td>
+            <td>Uncoated Paper</td>
+            <td>100+</td>
+            <td>0.1+</td>
+          </tr>
+          <tr>
+            <td>Paper</td>
+            <td>Cardstock</td>
+            <td>50+</td>
+            <td>0.1+</td>
+          </tr>
+          <tr>
+            <td>Paper</td>
+            <td>Recycled Paper</td>
+            <td>200+</td>
+            <td>0.1+</td>
+          </tr>
+          <tr>
+            <td>Plastics</td>
+            <td>Acrylic</td>
+            <td>5+</td>
+            <td>10+</td>
+          </tr>
+          <tr>
+            <td>Plastics</td>
+            <td>PVC</td>
+            <td>10+</td>
+            <td>10+</td>
+          </tr>
+          <tr>
+            <td>Fabric</td>
+            <td>Canvas</td>
+            <td>1+</td>
+            <td>6+</td>
+          </tr>
+          <tr>
+            <td>Fabric</td>
+            <td>Cotton</td>
+            <td>50+</td>
+            <td>6+</td>
+          </tr>
+          <tr>
+            <td>Metals</td>
+            <td>Aluminum</td>
+            <td>1+</td>
+            <td>50+</td>
+          </tr>
+          <tr>
+            <td>Metals</td>
+            <td>Stainless Steel</td>
+            <td>1+</td>
+            <td>50+</td>
+          </tr>
+          <tr>
+            <td>Metals</td>
+            <td>Copper</td>
+            <td>1+</td>
+            <td>50+</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- bottom section -->
+      <div class="bottom">
+        <div class="laurel-zhang">Laurel Zhang</div>
+        <div class="personal-details">
+          My personal portfolio website showcases some of my previous work.
+          Thank you for visiting, and I look forward to sharing more creative
+          and design stories with you!
+        </div>
+        <img class="x-ins" alt="" src="/image/x-ins.png" />
+        <div class="bottom-email">
+          laurelzhang006@gmail.com<br />
+          @ Copyright 2024 | Laurel Zhang
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menuToggle = document.querySelector(".menu-toggle");
+      var menuItems = document.querySelector(".menu-items");
+      var icon = document.querySelector(".icon");
+
+      if (menuToggle && menuItems) {
+        menuToggle.addEventListener("click", function () {
+          this.classList.toggle("active");
+          menuItems.classList.toggle("active");
+          icon.classList.toggle("active");
+        });
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const table = document.querySelector("#material-table");
+        const headers = table.querySelectorAll("th");
+
+        headers.forEach((header, index) => {
+          header.addEventListener("click", () => {
+            sortTableByColumn(table, index, header.dataset.type);
+          });
+        });
+      });
+
+      function sortTableByColumn(table, columnIndex, type) {
+        const tbody = table.querySelector("tbody");
+        const rows = Array.from(tbody.querySelectorAll("tr"));
+
+        const getCellValue = (row, index) => {
+          const cell = row.children[index];
+          const cellText = cell ? cell.textContent.trim() : "";
+          return type === "number"
+            ? parseFloat(cellText.replace(/[^\d.-]/g, ""))
+            : cellText;
+        };
+
+        const compare = (a, b) => {
+          const aValue = getCellValue(a, columnIndex);
+          const bValue = getCellValue(b, columnIndex);
+
+          if (type === "number") {
+            return aValue - bValue;
+          } else {
+            return aValue.localeCompare(bValue);
+          }
+        };
+
+        const sortedRows = rows.sort((a, b) => compare(a, b));
+
+        while (tbody.firstChild) {
+          tbody.removeChild(tbody.firstChild);
+        }
+
+        sortedRows.forEach((row) => tbody.appendChild(row));
+      }
+    </script>
+  </body>
+</html>

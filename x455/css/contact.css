@@ -1,0 +1,430 @@
+.contact-page {
+    width: 100%;
+    background-color: #fff;
+    overflow: auto;
+    color: #000;
+    font-family:  Kreon,serif;
+}
+
+/* Main menu container */
+.menu {
+  position: relative;
+  margin-left: 20px;
+  height: 120px;
+  font-size: 24px;
+  color: #000;
+  font-family: Kreon, serif; 
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 10px; 
+  box-sizing: border-box; 
+  z-index: 10;
+}
+
+/* Menu items */
+.menu-items {
+  display: flex;
+  gap: 40px; 
+  letter-spacing: 0.06em;
+  line-height: 150%;
+  font-weight: 500;
+  z-index: 1001;
+}
+
+.menu-items a {
+  text-decoration: none; 
+  color: inherit; 
+  position: relative; 
+  cursor: pointer; 
+}
+
+.menu-items a::after,
+.menu-toggle.active ~ .menu-items a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000; 
+  left: 0;
+  bottom: -5px; 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-items a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Logo icon */
+.logo-icon {
+  margin-left: 20px;
+  width: 162px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Icons section */
+.icon {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+/* Shopping cart and search icons */
+.shopping-cart-icon,
+.search-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+/* Show menu items on larger screens */
+@media only screen and (min-width: 769px) {
+  .menu-items {
+      display: flex !important;
+  }
+  .icon {
+      display: flex !important;
+  }
+}
+
+/* Hide menu items by default on smaller screens */
+@media only screen and (max-width: 768px) {
+  .menu-items {
+      display: none;
+  }
+  .icon {
+      display: none;
+  }
+}
+
+/* Show menu items when toggle button is clicked */
+.menu-toggle.active ~ .menu-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  background-color: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 160px; 
+  z-index: 1001;
+}
+
+/* Show icons at the bottom of the menu section on mobile */
+.menu-toggle.active ~ .icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top:620px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+/* Toggle button for mobile */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Adjusted logo icon width for mobile */
+.logo-icon {
+  width: 60%;
+}
+
+/* Show toggle button on smaller screens */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+}
+
+/*contact section*/
+
+.contact-page1 {
+  position: relative;
+  margin: 40px 20px 0px; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+  letter-spacing: -0.01em;
+}
+
+.contact-page1-title {
+  font-family: Kreon, serif; 
+  font-size: 4em;
+  margin: 0 20px; 
+}
+
+.contact-page1-text {
+  margin: 0 20px; 
+  font-size: 1.5em;
+  line-height: 150%;
+  color: #828282;
+}
+.email-details{
+  margin: 20px 40px 0px; 
+    width: 364px;
+    position: relative;
+    font-size: 1.2em;
+    line-height: 150%;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    height: 129px;
+}
+
+
+/*details*/
+.contact-items{
+  width: 100%;
+position: relative;
+background-color: #fff;
+height:600px;
+overflow: hidden;
+text-align: left;
+font-size: 16px;
+color: #000;
+font-family: Inter;
+}
+
+.input {
+  position: absolute;
+  top:40px;
+  left: 40%;
+  width: 359px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.first-name {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+
+.input1 {
+  position: absolute;
+  top: 40px;
+  left: 70%;
+  width:382px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+
+.field {
+  align-self: stretch;
+  flex: 1;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 12px 16px;
+  color: #828282;
+}
+
+
+.input2 {
+  position: absolute;
+  top:140px;
+  left: 40%;
+  width: 806px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.input3 {
+  position: absolute;
+  top:240px;
+  left: 40%;
+  width: 806px;
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.button {
+  position: absolute;
+  top: 470px;
+  left: 75%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background-color: #000;
+  width: 279px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #fff;
+}
+
+.send-message {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  cursor: pointer; 
+}
+
+.info {
+  position: absolute;
+  top: 440px;
+  left: 40%;
+  line-height: 150%;
+  font-weight: 500;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 400px;
+  height: 19px;
+}
+
+
+/* Bottom section */
+.bottom {
+    position: relative;
+    margin: 20px 0px 0px; 
+    width: 100%;
+    background-color: #f6f6f6;
+    text-align: center;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.laurel-zhang {
+    font-size: 2.625em; 
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.personal-details {
+    font-size: 1.5em; 
+    line-height: 1.5;
+    color: #808080;
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight:lighter;
+}
+
+.x-ins {
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-email {
+    width: 100%;
+    font-size: 1.5em; 
+    line-height: 1.8;
+    display: flex;
+    letter-spacing: 0.01em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .contact-page1 {
+    margin: 20px 10px 0px; 
+}
+
+.contact-page1-title {
+    font-size: 3em;
+
+}
+
+.contact-page1-text {
+    font-size: 1em;
+
+}
+
+.email-details {
+    margin: 10px 0px 0px; 
+    font-size: 1em;
+}
+
+.contact-items {
+    height:800px;
+   margin-left: 30px;
+    
+}
+
+.input, .input1, .input2, .input3 {
+    position: relative;
+    left: 0;
+    top:0;
+    width:90%;
+    margin-top: 10px;
+}
+
+
+.info {
+    width: 100%;
+    margin-top: 10px;
+    left: 0;
+    top: 620px;
+}
+
+.button {
+  width: 90%;
+  left: 0;
+  margin-top: 220px;
+  margin-bottom: 40px;
+}
+
+
+    .bottom {
+  
+        font-size: 0.6em; 
+    }
+}

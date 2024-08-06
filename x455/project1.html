@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project-Laurel Zhang (Chengchen Zhang)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/project1.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kreon:wght@500;700&display=swap"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- !PAGE CONTENT! -->
+    <div class="project1-page">
+      <!-- menu section -->
+      <div class="menu">
+        <a href="/index.html">
+          <img class="logo-icon" alt="logo" src="/image/personal-logo.png" />
+        </a>
+        <!-- Toggle button for mobile -->
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <!-- Menu items -->
+        <div class="menu-items">
+          <a href="/index.html" class="home1">Home</a>
+          <a href="about.html" class="about">About</a>
+          <a href="designs.html" class="designs2">Designs</a>
+          <a href="videos.html" class="videos3">Videos</a>
+          <a href="production.html" class="production2">Production</a>
+          <a href="contact.html" class="contact">Contact</a>
+        </div>
+        <!-- Icons section -->
+        <div class="icon">
+          <img
+            class="shopping-cart-icon"
+            alt="cart"
+            src="/image/shopping-cart-icon.png"
+          />
+          <img class="search-icon" alt="search" src="/image/search-icon.png" />
+        </div>
+      </div>
+
+      <!-- Project section -->
+      <div class="project1-page1">
+        <div class="project1-page1-title">
+          Forum of Moral Development Conference Visual Design
+        </div>
+
+        <div class="project1-page1-text">
+          Identity design | Brand guidelines | Content design | Illustration |
+          Product mockups | Packaging artwork | Photography direction | Brochure
+          design
+        </div>
+
+        <div class="project1-page1-paragraph">
+          This project, in 2022, involved designing the main visual and a set of
+          conference materials for the Forum of Moral Development, organized by
+          the Institute for Moral Development at Southeast University in
+          Nanjing, China. This marked the third consecutive year I was entrusted
+          with the visual design for their conference. The conference theme
+          focused on pressing social issues such as the influence of industrial
+          and high-tech developments, requiring a thoughtful and impactful
+          visual approach. To achieve this, I utilized AI generation to craft an
+          innovative and cohesive visual identity that enhanced the forum’s
+          professional atmosphere and facilitated a seamless attendee
+          experience.<br />
+          The items included a main visual display framework, pull-up banners,
+          conference manual, name cards, guest passes, and ID badges.
+        </div>
+
+        <div class="project-image-gallery">
+          <a data-fancybox="gallery" href="/image/project-image/1.jpg">
+            <img
+              class="project-image1"
+              alt="project-image"
+              src="/image/project-image/1.jpg"
+            />
+          </a>
+
+          <a data-fancybox="gallery" href="/image/project-image/2.jpg">
+            <img
+              class="project-image2"
+              alt="project-image"
+              src="/image/project-image/2.jpg"
+            />
+          </a>
+          <a data-fancybox="gallery" href="/image/project-image/3.jpg">
+            <img
+              class="project-image3"
+              alt="project-image"
+              src="/image/project-image/3.jpg"
+            />
+          </a>
+          <a data-fancybox="gallery" href="/image/project-image/5.jpg">
+            <img
+              class="project-image4"
+              alt="project-image"
+              src="/image/project-image/5.jpg"
+            />
+          </a>
+          <a data-fancybox="gallery" href="/image/project-image/4.png">
+            <img
+              class="project-image5"
+              alt="project-image"
+              src="/image/project-image/4.png"
+            />
+          </a>
+        </div>
+
+        <a data-fancybox="gallery" href="/image/project-image/6.jpg">
+          <img
+            class="project-image6"
+            alt="project-image"
+            src="/image/project-image/6.jpg"
+          />
+        </a>
+      </div>
+
+      <!-- bottom section -->
+      <div class="bottom">
+        <div class="laurel-zhang">Laurel Zhang</div>
+        <div class="personal-details">
+          My personal portfolio website showcases some of my previous work.
+          Thank you for visiting, and I look forward to sharing more creative
+          and design stories with you!
+        </div>
+        <img class="x-ins" alt="" src="/image/x-ins.png" />
+        <div class="bottom-email">
+          laurelzhang006@gmail.com<br />
+          @ Copyright 2024 | Laurel Zhang
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menuToggle = document.querySelector(".menu-toggle");
+      var menuItems = document.querySelector(".menu-items");
+      var icon = document.querySelector(".icon");
+
+      if (menuToggle && menuItems) {
+        menuToggle.addEventListener("click", function () {
+          this.classList.toggle("active");
+          menuItems.classList.toggle("active");
+          icon.classList.toggle("active");
+        });
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </body>
+</html>

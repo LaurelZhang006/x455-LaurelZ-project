@@ -1,0 +1,480 @@
+.designs-page {
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+  color: #000;
+  font-family: Kreon, serif;
+}
+
+/* Main menu container */
+/* Main menu container */
+.menu {
+  position: relative;
+  margin-left: 20px;
+  height: 120px;
+  font-size: 24px;
+  color: #000;
+  font-family: Kreon, serif; 
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 10px; 
+  box-sizing: border-box; 
+  z-index: 10;
+}
+
+/* Menu items */
+.menu-items {
+  display: flex;
+  gap: 40px; 
+  letter-spacing: 0.06em;
+  line-height: 150%;
+  font-weight: 500;
+  z-index: 1001;
+}
+
+.menu-items a {
+  text-decoration: none; 
+  color: inherit; 
+  position: relative; 
+  cursor: pointer; 
+}
+
+.menu-items a::after,
+.menu-toggle.active ~ .menu-items a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000; 
+  left: 0;
+  bottom: -5px; 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-items a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Logo icon */
+.logo-icon {
+  margin-left: 20px;
+  width: 162px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Icons section */
+.icon {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+/* Shopping cart and search icons */
+.shopping-cart-icon,
+.search-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+/* Show menu items on larger screens */
+@media only screen and (min-width: 769px) {
+  .menu-items {
+      display: flex !important;
+  }
+  .icon {
+      display: flex !important;
+  }
+}
+
+/* Hide menu items by default on smaller screens */
+@media only screen and (max-width: 768px) {
+  .menu-items {
+      display: none;
+  }
+  .icon {
+      display: none;
+  }
+}
+
+/* Show menu items when toggle button is clicked */
+.menu-toggle.active ~ .menu-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  background-color: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 160px; 
+  z-index: 1001;
+}
+
+/* Show icons at the bottom of the menu section on mobile */
+.menu-toggle.active ~ .icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top:620px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+/* Toggle button for mobile */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Adjusted logo icon width for mobile */
+.logo-icon {
+  width: 60%;
+}
+
+/* Show toggle button on smaller screens */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+}
+
+/* Design section */
+.designs-page1 {
+  position: relative;
+  margin: 40px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  letter-spacing: -0.01em;
+}
+
+.designs-page1-title {
+  font-family: Kreon, serif;
+  font-size: 4em;
+  margin: 0 20px;
+}
+
+.designs-page1-text {
+  margin: 10px 20px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #828282;
+}
+
+/* Slider */
+.container {
+    position: relative;
+  margin: -20px 20px 0px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #646464;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #000000;
+}
+.swiper-pagination{
+  margin-bottom: 15px;
+}
+
+
+
+/* scroll projects */
+
+.scroll-container {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  margin: 20px 20px 40px;
+}
+
+/* Scrollbar */
+.scroll-project1,
+.scroll-project2,
+.scroll-project3,
+.scroll-project4 {
+  flex: 1 1 calc(50% - 20px); 
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 40px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #bbbbbb;
+}
+
+.scroll-img1 img,
+.scroll-img2 img,
+.scroll-img3 img,
+.scroll-img4 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.scroll-img1,
+.scroll-img2,
+.scroll-img3,
+.scroll-img4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+.scroll-img1:hover,
+.scroll-img2:hover,
+.scroll-img3:hover,
+.scroll-img4:hover {
+  transform: scale(1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.scrolltitle-1 {
+  font-size: 2em;
+  padding: 10px 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.scroll-div {
+  width: 100%;
+  background-color: #f6f6f6;
+  height: 190px;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+.scroll-object {
+  color: #000;
+  font-size: 16px;
+  padding: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.scroll-img1,
+.scroll-img2,
+.scroll-img3,
+.scroll-img4 {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+/* Bottom section */
+.bottom {
+  position: relative;
+  margin: 20px 0px 0px;
+  width: 100%;
+  background-color: #f6f6f6;
+  text-align: center;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.laurel-zhang {
+  font-size: 2.625em; 
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.personal-details {
+  font-size: 1.5em; 
+  line-height: 1.5;
+  color: #808080;
+  width: 75%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight:lighter;
+}
+
+
+.x-ins {
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-email {
+  width: 100%;
+  font-size: 1.5em; 
+  line-height: 1.8;
+  display: flex;
+  letter-spacing: 0.01em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .designs-page1-title {
+    text-align: left;
+    font-size: 3em;
+  }
+
+  .designs-page1-text {
+    text-align: left;
+    font-size: 1em;
+  }
+
+  /* Slider Container */
+ 
+
+  .slider-images {
+    flex-wrap: nowrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .slider-img {
+    flex: 0 0 auto;
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    cursor: pointer;
+    object-fit: cover; 
+    transition: 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .slider-img.active {
+    width: 100% !important;
+    max-width: 400px; 
+    height: 250px !important; 
+  }
+
+  .details {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    text-align: left; 
+  }
+
+  .details h2 {
+    display: block;
+    font-size: 16px;
+  }
+
+  .details p {
+    margin-top: -6px;
+    display: block;
+    font-size: 12px;
+  }
+
+  /* Scroll Projects */
+  .scroll-container {
+    display: block; 
+    margin: 40px 20px; 
+  }
+
+  .scroll-project1,
+  .scroll-project2,
+  .scroll-project3,
+  .scroll-project4 {
+    width: 105%; 
+    margin-bottom: 20px; 
+  }
+
+  .scroll-object {
+    margin-left: 0; 
+  }
+
+  .scroll-img1,
+  .scroll-img2,
+  .scroll-img3,
+  .scroll-img4 {
+    margin: 0 auto; 
+  }
+
+  .scrolltitle-1 {
+    font-size: 1.5em;
+  }
+
+  .scroll-div {
+    height: 250px;
+    margin-left: -10px;
+    overflow-y: auto;
+  }
+  .bottom {
+    margin-top: -20px;
+    font-size: 0.6em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .designs-page1-title {
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: -10px;
+    margin-left: 0px;
+  }
+
+  .designs-page1-text {
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+
+  .scroll-container {
+    display: block;
+    margin-left: 0px;
+  }
+
+}

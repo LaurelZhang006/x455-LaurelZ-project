@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laurel Zhang (Chengchen Zhang)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kreon:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- !PAGE CONTENT! -->
+    <div class="home">
+      <!-- menu section -->
+      <div class="menu">
+        <a href="/index.html">
+          <img class="logo-icon" alt="logo" src="/image/personal-logo.png" />
+        </a>
+        <!-- Toggle button for mobile -->
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <!-- Menu items -->
+        <div class="menu-items">
+          <a href="/index.html" class="home1">Home</a>
+          <a href="about.html" class="about">About</a>
+          <a href="designs.html" class="designs2">Designs</a>
+          <a href="videos.html" class="videos3">Videos</a>
+          <a href="production.html" class="production2">Production</a>
+          <a href="contact.html" class="contact">Contact</a>
+        </div>
+        <!-- Icons section -->
+        <div class="icon">
+          <img
+            class="shopping-cart-icon"
+            alt="cart"
+            src="/image/shopping-cart-icon.png"
+          />
+          <img class="search-icon" alt="search" src="/image/search-icon.png" />
+        </div>
+      </div>
+      <img class="gif-icon" alt="homepage-gif" src="/image/project.gif" />
+      <!-- simple-introduction section -->
+      <div class="simple-introduction">
+        <div class="introduction-text">
+          Passionate Engineer and Future UX Designer, Delivering Tailored
+          Solutions for Non-Profits. Committed to User Feedback and Community
+          Impact.
+        </div>
+      </div>
+      <!-- design section -->
+      <div class="designs">
+        <div class="designs1">Designs</div>
+        <div class="design1-text">
+          Exploring Creative Solutions and Innovations
+        </div>
+        <div class="designs-project">
+          <div class="project">
+            <img
+              class="project-image"
+              alt="Forum of Moral Development"
+              src="/image/Forum-1.png"
+            />
+            <a href="/project1.html" target="_blank"
+              ><span class="project-name"
+                >Forum of Moral Development Conference Visual Design</span
+              ></a
+            >
+          </div>
+          <div class="project">
+            <img
+              class="project-image"
+              alt="Conference Poster Design"
+              src="/image/poster.png"
+            />
+            <span class="project-name">Academic Conference Poster Design</span>
+          </div>
+          <div class="project">
+            <img
+              class="project-image"
+              alt="Library Creative Product Design"
+              src="/image/poster-2.png"
+            />
+            <span class="project-name">Library Creative Product Design</span>
+          </div>
+          <div class="project">
+            <img
+              class="project-image"
+              alt="Image 5 Icon"
+              src="/image/poster-3.png"
+            />
+            <span class="project-name">Yu Yuan Garden Annual Pass Design</span>
+          </div>
+          <div class="project">
+            <img
+              class="project-image"
+              alt="Advertising Design"
+              src="/image/poster-4.png"
+            />
+            <span class="project-name"
+              >Advertising Design for Forbidden City Merchandise</span
+            >
+          </div>
+          <div class="project">
+            <img
+              class="project-image"
+              alt="Nanjing's Premier Multilingual"
+              src="/image/poster-5.png"
+            />
+            <span class="project-name"
+              >Multilingual Exchange promotional materials design</span
+            >
+          </div>
+        </div>
+        <div class="button-design1">
+          <a href="designs.html" class="designs2">See More Projects </a>
+        </div>
+      </div>
+      <!-- video section -->
+      <div class="videos">
+        <div class="videos1">Videos</div>
+        <div class="videos1-text">
+          Visual Storytelling and Project Highlights
+        </div>
+        <div class="ml">
+          <video controls>
+            <source src="/video/ml.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="button-video">
+          <a href="/videos.html">See More Projects</a>
+        </div>
+      </div>
+      <!-- production section -->
+      <div class="production">
+        <div class="production1">Production</div>
+        <div class="production-text">
+          Comprehensive Production Services and Pricing Details
+        </div>
+        <div class="paragraph">
+          With extensive experience in mechanical design and production, I
+          specialize in bringing creative ideas to life with precision and
+          efficiency. Since founding my studio in 2017, I have successfully
+          managed numerous projects for local institutions, producing over
+          200,000 units.<br />
+          I collaborate closely with various factories and am well-versed in
+          standard production materials and processes. My designs have
+          consistently transitioned from concept to reality, ensuring
+          high-quality results every time.<br />
+          Explore the pricing form below to learn about the costs associated
+          with different production materials. Let’s work together to transform
+          your vision into expertly crafted products.
+        </div>
+        <div class="button-production"><a href="/production.html">Learn More  </a> </div>
+      </div>
+      <!-- bottom section -->
+      <div class="bottom">
+        <div class="laurel-zhang">Laurel Zhang</div>
+        <div class="personal-details">
+          My personal portfolio website showcases some of my previous work.
+          Thank you for visiting, and I look forward to sharing more creative
+          and design stories with you!
+        </div>
+        <img class="x-ins" alt="" src="/image/x-ins.png" />
+        <div class="bottom-email">
+          laurelzhang006@gmail.com<br />
+          @ Copyright 2024 | Laurel Zhang
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menuToggle = document.querySelector(".menu-toggle");
+      var menuItems = document.querySelector(".menu-items");
+      var icon = document.querySelector(".icon");
+
+      if (menuToggle && menuItems) {
+        menuToggle.addEventListener("click", function () {
+          this.classList.toggle("active");
+          menuItems.classList.toggle("active");
+          icon.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
